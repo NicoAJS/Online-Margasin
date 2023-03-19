@@ -3,12 +3,13 @@
 /** Header font **/
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
+
+
 *body {
     margin: 0;
     padding: 0;
     background-color: #f3f0ea;
 }
-
 
 /*************** TOP *******************/
 #top {
@@ -27,6 +28,7 @@
     font-family: 'Lora', serif;
 }
 
+
 nav {
     display: flex;
     justify-content: center;
@@ -44,10 +46,24 @@ nav a {
     font-family: 'Lora', serif;
 }
 
+@keyframes color {
+    from{color: #7895B2;}
+    to{color: #394e63;}
+
+}
+
+nav a:hover {
+    color: #394e63;
+    text-decoration: underline;
+    animation-name: color;
+    animation-duration: 1s;
+}
+
 
 /*************** MID *******************/
 main {
     box-sizing: 1000px;
+    padding-bottom: 200px;
 }
 
 #cina {
@@ -68,6 +84,7 @@ main {
     line-height: 40pt;
     font-size: 15pt;
     color: #7895B2;
+    padding-bottom: 10px;
 }
 
 #intro-p {
@@ -77,18 +94,82 @@ main {
     font-family: 'Raleway', sans-serif;
     line-height: 25pt;
     font-weight: 500;
+    padding-bottom: 100px;
+    color: #444444;
+}
+
+.info-left {
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
     padding-bottom: 120px;
 }
 
-#wow-intro {
-    max-width: 1050px;
-    display: flex;
-    justify-content: left;
-    padding-left: 20%;
+.info-text-left {
+    padding-left: 50px;
 }
 
-#wow-logo {
-    height: 200px;
+.info-text-left h2 {
+    font-family: 'Lora', serif;
+    color: #444444;
+}
+
+.info-text-left p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    line-height: 16pt;
+    color: #444444;
+    padding-bottom: 10px;
+}
+
+.rm-btn {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background-color: #7895B2;
+    padding: 10px 18px;
+    border-radius: 10%;
+    color: #F5EFE6;
+}
+
+.info-right {
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+    text-align: right;
+    padding-bottom: 120px;
+}
+
+.info-text-right {
+    padding-right: 50px;
+}
+
+.info-text-right h2 {
+    font-family: 'Lora', serif;
+    color: #444444;
+}
+
+.info-text-right p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    line-height: 16pt;
+    color: #444444;
+    padding-bottom: 10px;
 }
 
 /*************** BUT *******************/
+
+footer {
+    background-color: #AEBDCA;
+    height: 200px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: last baseline;
+}
