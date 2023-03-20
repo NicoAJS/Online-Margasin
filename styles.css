@@ -17,7 +17,11 @@
     background-color: #EDDBC7;
 }
 
-#navnavn {
+#top a  {
+    text-decoration: none;
+}
+
+#navn {
     display: flex;
     justify-content: center;
     color: #7895B2;
@@ -57,6 +61,19 @@ nav a:hover {
     text-decoration: underline;
     animation-name: color;
     animation-duration: 1s;
+}
+
+nav a::after{
+    content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+
+nav a:hover::after {
+    
 }
 
 
