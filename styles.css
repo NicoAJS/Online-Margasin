@@ -14,11 +14,12 @@
 /*************** TOP *******************/
 #top {
     max-width: 100%;
-    background-color: #EDDBC7;
+    background-color: #eddbc7;
 }
 
 #top a  {
     text-decoration: none;
+    padding-bottom: 15px;
 }
 
 #navn {
@@ -38,8 +39,9 @@ nav {
     justify-content: center;
     justify-content: space-around;
     background-color: #EDDBC7;
-    max-width: 65%;
-    padding-left: 15%;
+    max-width: 55%;
+    margin-left: auto;
+    margin-right: auto;
 
     }
 
@@ -55,6 +57,7 @@ nav a {
     to{color: #394e63;}
 
 }
+
 
 nav a:hover {
     color: #394e63;
@@ -72,15 +75,12 @@ nav a::after{
   transition: 300ms;
 }
 
-nav a:hover::after {
-    
-}
-
 
 /*************** MID *******************/
 main {
     box-sizing: 1000px;
     padding-bottom: 200px;
+    background-image: url("billeder/bg.png");
 }
 
 #cina {
@@ -152,6 +152,11 @@ main {
     color: #F5EFE6;
 }
 
+.rm-btn:hover {
+    background-color: #394e63;
+    transition: 1s;
+}
+
 .info-right {
     max-width: 1050px;
     display: flex;
@@ -179,6 +184,135 @@ main {
     padding-bottom: 10px;
 }
 
+/*************** Artikel ***************/
+
+.artintro-h {
+    box-sizing: 700px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Lora', serif;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 40pt;
+    font-size: 15pt;
+    color: #7895B2;
+    padding-bottom: 10px;
+}
+
+.artintro-p {
+    max-width: 700px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25pt;
+    font-weight: 500;
+    padding-bottom: 50px;
+    color: #444444;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#artimg {
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.art-uh {
+    width: 500px;
+    display: flex;
+    justify-content: left;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Raleway', sans-serif;
+    color: #444444;
+}
+
+.art-mp {
+    width: 500px;
+    display: flex;
+    justify-content: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Raleway', sans-serif;
+    color: #444444;
+    line-height: 16pt;
+}
+
+#custom {
+    padding-top: 50px;
+}
+
+#factions {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding-top: 70px;
+}
+
+#race {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-top: 70px;
+}
+
+#classes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-top: 70px;
+}
+
+#specimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    padding-top: 70px;
+}
+
+#quest {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    padding-top: 70px;
+}
+
+#expan {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-top: 70px;
+
+}
+
+#dun {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-top: 70px;
+}
+
+#hordeimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-top: 70px;
+}
+
 /*************** BUT *******************/
 
 footer {
@@ -186,7 +320,8 @@ footer {
     height: 200px;
 }
 
-#copyright {
+.icon {
+    width: 20px;
     display: flex;
-    justify-content: last baseline;
+    padding-left: 20px;
 }
