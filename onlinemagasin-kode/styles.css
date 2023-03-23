@@ -1,0 +1,327 @@
+/** main font **/
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+/** Header font **/
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+
+
+*body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f0ea;
+}
+
+/*************** TOP *******************/
+#top {
+    max-width: 100%;
+    background-color: #eddbc7;
+}
+
+#top a  {
+    text-decoration: none;
+    padding-bottom: 15px;
+}
+
+#navn {
+    display: flex;
+    justify-content: center;
+    color: #7895B2;
+    background-color: #EDDBC7;
+    font-size: 30pt;
+    margin-top: 0;
+    padding-top: 20px;
+    font-family: 'Lora', serif;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #EDDBC7;
+    max-width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+
+    }
+
+nav a {
+    color: #7895B2;
+    font-size: 20pt;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+}
+
+@keyframes color {
+    from{color: #7895B2;}
+    to{color: #394e63;}
+
+}
+
+
+nav a:hover {
+    color: #394e63;
+    text-decoration: underline;
+    animation-name: color;
+    animation-duration: 1s;
+}
+
+nav a::after{
+    content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+
+
+/*************** MID *******************/
+main {
+    box-sizing: 1000px;
+    padding-bottom: 200px;
+    background-image: url("billeder/bg.png");
+}
+
+#cina {
+    width: 1100px;
+    height: 600px;
+    padding-left: 20%;
+}
+
+#intro-h {
+    box-sizing: 1050px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Lora', serif;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 40pt;
+    font-size: 15pt;
+    color: #7895B2;
+    padding-bottom: 10px;
+}
+
+#intro-p {
+    max-width: 1050px;
+    text-align: center;
+    padding-left: 20%;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25pt;
+    font-weight: 500;
+    padding-bottom: 100px;
+    color: #444444;
+}
+
+.info-left {
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+    padding-bottom: 120px;
+}
+
+.info-text-left {
+    padding-left: 50px;
+}
+
+.info-text-left h2 {
+    font-family: 'Lora', serif;
+    color: #444444;
+}
+
+.info-text-left p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    line-height: 16pt;
+    color: #444444;
+    padding-bottom: 10px;
+}
+
+.rm-btn {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background-color: #7895B2;
+    padding: 10px 18px;
+    border-radius: 10%;
+    color: #F5EFE6;
+}
+
+.rm-btn:hover {
+    background-color: #394e63;
+    transition: 1s;
+}
+
+.info-right {
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+    text-align: right;
+    padding-bottom: 120px;
+}
+
+.info-text-right {
+    padding-right: 50px;
+}
+
+.info-text-right h2 {
+    font-family: 'Lora', serif;
+    color: #444444;
+}
+
+.info-text-right p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    line-height: 16pt;
+    color: #444444;
+    padding-bottom: 10px;
+}
+
+/*************** Artikel ***************/
+
+.artintro-h {
+    box-sizing: 700px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Lora', serif;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 40pt;
+    font-size: 15pt;
+    color: #7895B2;
+    padding-bottom: 10px;
+}
+
+.artintro-p {
+    max-width: 700px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25pt;
+    font-weight: 500;
+    padding-bottom: 50px;
+    color: #444444;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#artimg {
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.art-uh {
+    width: 500px;
+    display: flex;
+    justify-content: left;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Raleway', sans-serif;
+    color: #444444;
+}
+
+.art-mp {
+    width: 500px;
+    display: flex;
+    justify-content: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Raleway', sans-serif;
+    color: #444444;
+    line-height: 16pt;
+}
+
+#custom {
+    padding-top: 50px;
+}
+
+#factions {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding-top: 70px;
+}
+
+#race {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-top: 70px;
+}
+
+#classes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-top: 70px;
+}
+
+#specimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    padding-top: 70px;
+}
+
+#quest {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    padding-top: 70px;
+}
+
+#expan {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-top: 70px;
+
+}
+
+#dun {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-top: 70px;
+}
+
+#hordeimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-top: 70px;
+}
+
+/*************** BUT *******************/
+
+footer {
+    background-color: #AEBDCA;
+    height: 200px;
+}
+
+.icon {
+    width: 20px;
+    display: flex;
+    padding-left: 20px;
+}
